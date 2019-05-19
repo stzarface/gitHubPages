@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400|Merriweather:900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey form</title>
+    
+</head>
+<body>
+    <!--PROMENA KOMENTARA2 -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description">You need to fill this form in order to apply for our educational program.</p>
+    <p class="sub-description">Good luck!</p>
+    
+    <div id="form-container">
+        <form action="" id="survey-form">
+            <div class="container">
+                <div class="left">
+                    <label  for="name" id="name-label"><sup>*</sup>Name:</label>
+                </div>
+                <div class="right">
+                   <input id="name" type="text" placeholder="Your Name" required></label>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="left">
+                    <label for="email" id="email-label"><sup>*</sup>Email:</label>
+                </div>
+                <div class="right">
+                    <input id="email" type="email" placeholder="Your email" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="left">
+                    <label  for="number" id="number-label">Age:</label>
+                </div>
+                <div class="right">
+                    <input id="number" type="number" min="18" max="100" placeholder="Number of years">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="left">Please chose your higher educational level:</div>
+                <div class="right">
+                    <select name="degree" id="dropdown">
+                        <option value="default" disabled selected>Educational level</option>
+                        <option value="primary_school">Primary school</option>
+                        <option value="secondary_school">Secondary school</option>
+                        <option value="associate_degree">Associate degree</option>
+                        <option value="bachelor's_degree">Bachelor's degree</option>
+                        <option value="master's_degree">Master's degree</option>
+                        <option value="doctoral_degree">Doctoral degree</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="left">And the continent from whom you are:</div>
+                <div class="right">
+                    <input type="radio" name="continent" value="europe">Europe <br>
+                    <input type="radio" name="continent" value="north America">North America <br>
+                    <input type="radio" name="continent" value="south America">South America <br>
+                    <input type="radio" name="continent" value="asia">Asia <br>
+                    <input type="radio" name="continent" value="australia">Australia <br>
+                    <input type="radio" name="continent" value="africa">Africa <br>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="left">Which courses do you want to attend?</div>
+                <div class="right">
+                    <input type="checkbox" value="fe">Front end development <br>
+                    <input type="checkbox" value="be">Back end development <br>
+                    <input type="checkbox" value="ds">Data sciense <br>
+                    <input type="checkbox" value="ml">Machine learning <br>
+                    <input type="checkbox" value="nn">Neutral networks <br>
+                    <input type="checkbox" value="ui">UI design <br>
+                    <input type="checkbox" value="ux">UX design <br>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="left">If you have comments, suggestions or just want to write us something:</div>
+                <div class="right">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Place for your text..."></textarea>
+                </div>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
